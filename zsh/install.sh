@@ -24,4 +24,4 @@ fi
 
 cp .zshrc $HOME/.zshrc
 
-source $HOME/.zshrc
+echo "Done. Don't forget to source!"
