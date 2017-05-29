@@ -10,7 +10,6 @@ antigen bundle gko/ssh-connect
 antigen bundle molovo/tipz
 antigen bundle hlissner/zsh-autopair
 antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle joel-porquet/zsh-dircolors-solarized
 antigen bundle joepvd/zsh-hints
 
 antigen theme refined
