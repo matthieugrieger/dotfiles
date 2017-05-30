@@ -3,18 +3,17 @@
 bold=$(tput bold)
 normal=$(tput sgr0)
 
-echo "${bold}Installing ZSH dotfiles...${normal}"
+echo "${bold}Installing zsh dotfiles...${normal}"
 
 if [ "$SHELL" != "/usr/bin/zsh" ]; then
 	echo "You're not using ZSH, silly! Exiting..."
 	exit 1
 fi
 
-if [ -d "$HOME/.zsh/antigen" ] && [ -f "$HOME/.zsh/antigen/antigen.zsh" ]; then
-	echo "Antigen already found at ~/.zsh/antigen. Skipping Antigen installation."
+if [ -d "$HOME/.zplug" ] && [ -f "$HOME/.zplug/init.zsh" ]; then
+	echo "zplug already found at ~/.zplug. Skipping zplug installation."
 else
-	mkdir -p $HOME/.zsh/antigen
-	curl -L git.io/antigen > $HOME/.zsh/antigen/antigen.zsh
+	curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh	
 fi
 
 if [ -f "$HOME/.zshrc" ]; then
