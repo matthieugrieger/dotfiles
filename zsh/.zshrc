@@ -7,7 +7,6 @@ antigen bundle peterhurford/git-aliases.zsh
 antigen bundle unixorn/git-extra-commands
 antigen bundle zlsun/solarized-man
 antigen bundle gko/ssh-connect
-antigen bundle molovo/tipz
 antigen bundle hlissner/zsh-autopair
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle joepvd/zsh-hints
