@@ -5,14 +5,13 @@ export CLICOLOR=1
 
 # Git plugins
 zplug "plugins/git", from:oh-my-zsh
-zplug "k4rthik/git-cal"
 zplug "peterhurford/git-aliases.zsh"
 zplug "unixorn/git-extra-commands"
 
 # Utility plugins
 zplug "b4b4r07/enhancd", use:init.sh
 zplug "zsh-users/zsh-history-substring-search"
-zplug "gko/ssh-connect"
+zplug "gko/ssh-connect", use:ssh-connect.sh
 zplug "hlissner/zsh-autopair"
 zplug "zsh-users/zsh-autosuggestions"
 zplug "joepvd/zsh-hints"
