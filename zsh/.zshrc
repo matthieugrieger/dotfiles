@@ -17,6 +17,9 @@ zplug "zsh-users/zsh-autosuggestions"
 zplug "joepvd/zsh-hints"
 zplug "supercrabtree/k"
 
+# OSX plugins
+zplug "plugins/osx", from:oh-my-zsh, if:"[[ $OSTYPE == *darwin* ]]"
+
 # Visual plugins
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug "zlsun/solarized-man"
