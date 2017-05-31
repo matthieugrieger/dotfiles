@@ -16,11 +16,7 @@ else
 	curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh	
 fi
 
-if [ -f "$HOME/.zshrc" ]; then
-	echo "Existing ~/.zshrc found. Backing up to ~/.zshrc.backup."
-	cp $HOME/.zshrc $HOME/.zshrc.backup
-fi
-
-cp .zshrc $HOME/.zshrc
+cp -v --backup .zshrc $HOME/.zshrc
+cp -v --backup .zsh_aliases $HOME/.zsh_aliases
 
 echo "Done. Don't forget to source!"

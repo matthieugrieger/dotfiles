@@ -1,0 +1,3 @@
+# ls aliases
+alias k="k -Ah"
+alias ls="k"
