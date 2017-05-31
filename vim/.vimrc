@@ -5,7 +5,6 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" Let Vundle manage Vundle.
 Plugin 'VundleVim/Vundle.vim'
 
 " Vim plugins
@@ -13,12 +12,11 @@ Plugin 'VundleVim/Vundle.vim'
 
 " General plugins
 Plugin 'tpope/vim-fugitive'
-Plugin 'scrooloose/nerdtree'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-surround'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdcommenter'
 
 " Language support
@@ -34,3 +32,22 @@ Plugin 'aming/vim-mason'
 
 call vundle#end()
 filetype plugin indent on
+
+" vim-colors-solarized configuration
+syntax enable
+set background=dark
+colorscheme solarized
+
+" Syntastic configuration
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" Airline configuration
+set laststatus=2
+let g:airline_theme = 'solarized'
+let g:airline_solarized_bg = 'dark'
