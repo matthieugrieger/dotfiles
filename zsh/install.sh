@@ -5,7 +5,7 @@ normal=$(tput sgr0)
 
 echo "${bold}Installing zsh dotfiles...${normal}"
 
-if [ "$SHELL" != "/usr/bin/zsh" ]; then
+if [[ $SHELL != *zsh ]]; then
 	echo "You're not using ZSH, silly! Exiting..."
 	exit 1
 fi
