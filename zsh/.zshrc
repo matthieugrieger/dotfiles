@@ -2,6 +2,7 @@ source ~/.zplug/init.zsh
 source ~/.zsh_aliases
 
 export CLICOLOR=1
+export TERM=xterm-256color
 
 # Git plugins
 zplug "plugins/git", from:oh-my-zsh

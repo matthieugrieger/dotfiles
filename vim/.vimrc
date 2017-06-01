@@ -1,4 +1,5 @@
 set nocompatible
+set number
 filetype off
 
 " Set the runtime path to include Vundle and initialize.
@@ -18,6 +19,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'airblade/vim-gitgutter'
 
 " Language support
 Plugin 'fatih/vim-go'
@@ -32,9 +34,13 @@ Plugin 'aming/vim-mason'
 
 call vundle#end()
 filetype plugin indent on
+set t_Co=256
 
 " vim-colors-solarized configuration
 syntax enable
+let g:solarized_termtrans = 1
+let g:solarized_visibility = "normal"
+let g:solarized_contrast = "normal"
 set background=dark
 colorscheme solarized
 
@@ -49,5 +55,5 @@ let g:syntastic_check_on_wq = 0
 
 " Airline configuration
 set laststatus=2
-let g:airline_theme = 'solarized'
-let g:airline_solarized_bg = 'dark'
+let g:airline_theme = 'minimalist'
+let g:airline_powerline_fonts = 1
