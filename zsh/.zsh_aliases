@@ -1,4 +1,0 @@
-# ls aliases
-alias k="k -h"
-alias ka="k -A"
-alias ls="k"

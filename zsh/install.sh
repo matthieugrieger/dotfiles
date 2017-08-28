@@ -17,6 +17,5 @@ else
 fi
 
 cp -v --backup .zshrc $HOME/.zshrc
-cp -v --backup .zsh_aliases $HOME/.zsh_aliases
 
 echo "Done. Don't forget to source!"
