@@ -1,0 +1,12 @@
+tpope/vim-fugitive
+vim-syntastic/syntastic
+vim-airline/vim-airline
+scrooloose/nerdcommenter
+airblade/vim-gitgutter
+vim-airline/vim-airline-themes
+nathanaelkane/vim-indent-guides
+raimondi/delimitmate
+flazz/vim-colorschemes
+plasticboy/vim-markdown
+elzr/vim-json
+tpope/vim-sensible
